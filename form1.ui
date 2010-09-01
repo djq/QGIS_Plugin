@@ -1,0 +1,85 @@
+<!DOCTYPE UI><UI version="3.1" stdsetdef="1">
+<class>Form1</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>Form1</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>600</width>
+            <height>480</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Form1</string>
+    </property>
+    <widget class="QPushButton">
+        <property name="name">
+            <cstring>pushButton1</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>390</x>
+                <y>390</y>
+                <width>51</width>
+                <height>31</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>X</string>
+        </property>
+        <property name="autoDefault">
+            <bool>false</bool>
+        </property>
+    </widget>
+    <widget class="QLineEdit">
+        <property name="name">
+            <cstring>lineEdit1</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>40</x>
+                <y>390</y>
+                <width>321</width>
+                <height>31</height>
+            </rect>
+        </property>
+    </widget>
+    <widget class="QListBox">
+        <property name="name">
+            <cstring>listBox1</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>30</x>
+                <y>50</y>
+                <width>411</width>
+                <height>311</height>
+            </rect>
+        </property>
+    </widget>
+</widget>
+<connections>
+    <connection>
+        <sender>pushButton1</sender>
+        <signal>clicked()</signal>
+        <receiver>listBox1</receiver>
+        <slot>clear()</slot>
+    </connection>
+    <connection>
+        <sender>lineEdit1</sender>
+        <signal>returnPressed()</signal>
+        <receiver>Form1</receiver>
+        <slot>AddEntry()</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="local" impldecl="in implementation">form1.ui.h</include>
+</includes>
+<slots>
+    <slot>AddEntry()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

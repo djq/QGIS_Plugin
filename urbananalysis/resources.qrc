@@ -1,0 +1,6 @@
+<RCC> 
+  <qresource prefix="/plugins/urbananalysis" > 
+    <file>icon.png</file> 
+  </qresource> 
+</RCC> 
+
