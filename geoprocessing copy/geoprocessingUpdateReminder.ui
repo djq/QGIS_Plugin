@@ -1,0 +1,107 @@
+<ui version="4.0" >
+ <class>GeoprocessingUpdateReminder</class>
+ <widget class="QDialog" name="GeoprocessingUpdateReminder" >
+  <property name="windowModality" >
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>511</width>
+    <height>150</height>
+   </rect>
+  </property>
+  <property name="minimumSize" >
+   <size>
+    <width>511</width>
+    <height>150</height>
+   </size>
+  </property>
+  <property name="maximumSize" >
+   <size>
+    <width>511</width>
+    <height>150</height>
+   </size>
+  </property>
+  <property name="windowTitle" >
+   <string>Geoprocessing Update Reminder</string>
+  </property>
+  <widget class="QLabel" name="label" >
+   <property name="geometry" >
+    <rect>
+     <x>9</x>
+     <y>25</y>
+     <width>493</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>The PyQgis Repository keeps a newer release of Geoprocessing for you.</string>
+   </property>
+   <property name="alignment" >
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>50</y>
+     <width>493</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Do you want to upgrade?</string>
+   </property>
+   <property name="alignment" >
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnYes" >
+   <property name="geometry" >
+    <rect>
+     <x>262</x>
+     <y>100</y>
+     <width>91</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Upgrade</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnNo" >
+   <property name="windowModality" >
+    <enum>Qt::NonModal</enum>
+   </property>
+   <property name="geometry" >
+    <rect>
+     <x>372</x>
+     <y>100</y>
+     <width>101</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Upgrade later</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>100</y>
+     <width>161</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>disable this Feature</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/plugins/geoprocessing" >
+        <file>icon_buffer.xpm</file>
+        <file>about.png</file>        
+    </qresource>
+</RCC>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

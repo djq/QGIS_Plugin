@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '/var/vhosts/pyqgis/builder/build/urbananalysis/Ui_UrbanAnalysis.ui'
+# Form implementation generated from reading ui file 'Ui_UrbanAnalysis.ui'
 #
-# Created: Wed Jun 23 13:58:54 2010
-#      by: PyQt4 UI code generator 4.4.4
+# Created: Wed Jul  7 14:45:26 2010
+#      by: PyQt4 UI code generator 4.7.3
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -18,6 +18,12 @@ class Ui_UrbanAnalysis(object):
         self.buttonBox.setOrientation(QtCore.Qt.Horizontal)
         self.buttonBox.setStandardButtons(QtGui.QDialogButtonBox.Cancel|QtGui.QDialogButtonBox.Ok)
         self.buttonBox.setObjectName("buttonBox")
+        self.radioButton = QtGui.QRadioButton(UrbanAnalysis)
+        self.radioButton.setGeometry(QtCore.QRect(20, 180, 101, 20))
+        self.radioButton.setObjectName("radioButton")
+        self.toolButton = QtGui.QToolButton(UrbanAnalysis)
+        self.toolButton.setGeometry(QtCore.QRect(30, 40, 151, 41))
+        self.toolButton.setObjectName("toolButton")
 
         self.retranslateUi(UrbanAnalysis)
         QtCore.QObject.connect(self.buttonBox, QtCore.SIGNAL("accepted()"), UrbanAnalysis.accept)
@@ -26,4 +32,6 @@ class Ui_UrbanAnalysis(object):
 
     def retranslateUi(self, UrbanAnalysis):
         UrbanAnalysis.setWindowTitle(QtGui.QApplication.translate("UrbanAnalysis", "UrbanAnalysis", None, QtGui.QApplication.UnicodeUTF8))
+        self.radioButton.setText(QtGui.QApplication.translate("UrbanAnalysis", "Click me", None, QtGui.QApplication.UnicodeUTF8))
+        self.toolButton.setText(QtGui.QApplication.translate("UrbanAnalysis", "...", None, QtGui.QApplication.UnicodeUTF8))
 
